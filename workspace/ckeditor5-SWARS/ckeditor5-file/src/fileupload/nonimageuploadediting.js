@@ -20,11 +20,8 @@ export default class NonImageUploadEditing extends Plugin {
 		const conversion = editor.conversion;
 		const fileRepository = editor.plugins.get( FileRepository );
 
-		schema.register( 'nonImage', {
-			isObject: true,
-			isBlock: true,
-			allowWhere: '$block',
-			allowAttributes: [ 'alt', 'src', 'srcset', 'uploadId', 'uploadStatus' ]
+		schema.extend( 'image', {
+			allowAttributes: [ 'href' ]
 		} );
 
 		editor.commands.add( 'nonImageUpload', new NonImageUploadCommand( editor ) );

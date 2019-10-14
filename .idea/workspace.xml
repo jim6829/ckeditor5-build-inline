@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85699d0d-d09a-4b7b-967f-8d179135bb12" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/ckeditor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ckeditor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/ckeditor.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/translations/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/af.js" afterDir="false" />
@@ -62,7 +63,9 @@
       <change beforePath="$PROJECT_DIR$/build/translations/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/vi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/translations/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/zh-cn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/translations/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/translations/zh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ckeditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/ckeditor5-SWARS/ckeditor5-file/src/fileupload.js" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/ckeditor5-SWARS/ckeditor5-file/src/fileupload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/ckeditor5-SWARS/ckeditor5-file/src/fileupload/nonimageuploadcommand.js" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/ckeditor5-SWARS/ckeditor5-file/src/fileupload/nonimageuploadcommand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/ckeditor5-SWARS/ckeditor5-file/src/fileupload/nonimageuploadediting.js" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/ckeditor5-SWARS/ckeditor5-file/src/fileupload/nonimageuploadediting.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570862480374</updated>
-      <workItem from="1570862483000" duration="29756000" />
+      <workItem from="1570862483000" duration="54469000" />
     </task>
     <servers />
   </component>

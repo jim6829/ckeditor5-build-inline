@@ -32,3 +32,7 @@ function uploadNonImage( writer, model, fileRepository, file ) {
 
 	insertImage( writer, model, { uploadId: loader.id } );
 }
+
+function insertLink( writer, model, attributes = {} ) {
+
+}
