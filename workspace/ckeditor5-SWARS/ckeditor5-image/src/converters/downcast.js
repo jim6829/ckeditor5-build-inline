@@ -6,11 +6,9 @@ export function downcastImageLink() {
 		dispatcher.on( 'attribute:href:image', ( evt, data, conversionApi ) => {
 			const href = data.attributeNewValue;
 			const viewImage = conversionApi.mapper.toViewElement( data.item );
-
 			const linkElement = conversionApi.writer.createContainerElement( 'a', { href } );
 
 			conversionApi.writer.insert( Position._createBefore( viewImage ), linkElement );
-
 			conversionApi.writer.move( Range._createOn( viewImage ), new Position( linkElement, 0 ) );
 		}, { priority: 'normal' } );
 	};

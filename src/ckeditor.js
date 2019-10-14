@@ -16,12 +16,13 @@ import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 // import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import Image from '@ckeditor/ckeditor5-image/src/image';
-import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
+// import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 // import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import FileUpload from '../workspace/ckeditor5-SWARS/ckeditor5-file/src/fileupload';
+import FileCaption from '../workspace/ckeditor5-SWARS/ckeditor5-file/src/filecaption';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
@@ -29,6 +30,8 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+
+import '../workspace/ckeditor5-SWARS/ckeditor5-theme/theme/custom.css';
 
 export default class InlineEditor extends InlineEditorBase {}
 
@@ -44,12 +47,13 @@ InlineEditor.builtinPlugins = [
 	// EasyImage,
 	Heading,
 	Image,
-	ImageCaption,
+	// ImageCaption,
 	ImageStyle,
 	ImageToolbar,
 	// ImageUpload,
 	ImageResize,
 	FileUpload,
+	FileCaption,
 	Link,
 	List,
 	MediaEmbed,

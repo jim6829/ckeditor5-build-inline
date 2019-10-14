@@ -97,7 +97,13 @@ export default class FileUploadProgress extends Plugin {
 				// Hide placeholder and initialize progress bar showing upload progress.
 				_hidePlaceholder( viewFigure, viewWriter );
 				_showProgressBar( viewFigure, viewWriter, loader, editor.editing.view );
-				_displayLocalImage( viewFigure, viewWriter, loader );
+				_displayLocalImage( viewFigure, viewWriter, loader, modelImage, editor.model );
+				// _editCaption( modelImage, editor.model, fileName );
+				// editor.model.change( writer => {
+				// 	/* eslint-env node */
+				// 	console.log( fileName );
+				// 	writer.appendText( fileName, modelImage.getChild( 0 ) );
+				// } );
 			}
 
 			return;
@@ -272,17 +278,19 @@ function _getExtension( fileName ) {
 // @param {module:engine/view/element~Element} imageFigure
 // @param {module:engine/view/downcastwriter~DowncastWriter} writer
 // @param {module:upload/filerepository~FileLoader} loader
-function _displayLocalImage( viewFigure, writer, loader ) {
+function _displayLocalImage( viewFigure, writer, loader, modelImage, model ) {
+	const viewImg = viewFigure.getChild( 0 );
+
 	loader.file.then( file => {
 		if ( _getExtension( file.name ) === '.jpg' && loader.data ) {
-			const viewImg = viewFigure.getChild( 0 );
-
 			writer.setAttribute( 'src', loader.data, viewImg );
 		}
-		else {
 
-		}
+		model.change( writer => {
+			writer.appendText( file.name, modelImage.getChild( 0 ) );
+		} );
 	} );
+
 	//
 	// if ( loader.data ) {
 	// 	const viewImg = viewFigure.getChild( 0 );
@@ -290,3 +298,9 @@ function _displayLocalImage( viewFigure, writer, loader ) {
 	// 	writer.setAttribute( 'src', loader.data, viewImg );
 	// }
 }
+
+// function _editCaption( image, model, fileName ) {
+// 	model.change( writer => {
+// 		writer.appendText( fileName, image.getChild( 0 ) );
+// 	} );
+// }
